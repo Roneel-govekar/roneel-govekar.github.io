@@ -1,0 +1,96 @@
+:root {
+  --bg: #0b0e14;
+  --card: #161a23;
+  --accent: #6ee7ff;
+  --text: #e5e7eb;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero {
+  padding: 120px 20px;
+  text-align: center;
+  background: radial-gradient(circle at top, #1f2937, #020617);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.cta a {
+  margin: 10px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+}
+
+.cta .secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 60px;
+}
+
+.stats div {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.about {
+  padding: 80px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+.project-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 18px;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+.project-card a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: .5;
+}
