@@ -2,11 +2,11 @@
   {
     "title": "AI based Clothing Application",
     "shortDescription": "Custom application for AI-powered clothing recommendations.",
-    "link": "projects/churn-prediction/index.html"
+    "link": "projects/AI-Fashion-App/index.html"
   },
   {
     "title": "Spotify Data Engineering Project",
     "shortDescription": "Data pipeline for Spotify data.",
-    "link": "projects/data-quality-ai/index.html"
+    "link": "projects/Spotify-Data-Engineering/index.html"
   }
 ]
