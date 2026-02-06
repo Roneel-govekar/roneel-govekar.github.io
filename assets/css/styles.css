@@ -60,7 +60,7 @@ body {
 }
 
 .about {
-  padding: 80px;
+  padding: 60px;
   max-width: 900px;
   margin: auto;
 }
@@ -101,4 +101,8 @@ footer {
 
 .cta{
   padding: 30px;
+}
+
+.about li{
+ padding-bottom: 10px;
 }

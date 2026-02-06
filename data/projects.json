@@ -8,5 +8,10 @@
     "title": "Spotify Data Engineering Project",
     "shortDescription": "Data pipeline for Spotify data.",
     "link": "projects/Spotify-Data-Engineering/index.html"
+  },
+  {
+    "title": "Analyzing Online Retail Store",
+    "shortDescription": "Analysis of online retail store data.",
+    "link": "projects/Online-Retail-Store-Analysis/index.html"
   }
 ]
