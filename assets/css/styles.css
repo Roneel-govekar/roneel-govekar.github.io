@@ -5,7 +5,9 @@
   --text: #e5e7eb;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -13,10 +15,11 @@ body {
   background: var(--bg);
   color: var(--text);
   font-size: clamp(1rem, 1vw, 1rem);
+  position: relative;
 }
 
 .hero {
-  padding: 1vw 2vw;
+  padding: 10vw 2vw;
   text-align: center;
   background: radial-gradient(circle at top, #1f2937, #020617);
 }
@@ -28,6 +31,24 @@ body {
 .hero p {
   font-size: clamp(1rem, 2vw, 2rem);
   opacity: 0.8;
+}
+
+.background_images {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 2000px;
+  z-index: -1;
+  background-image:
+    url("../../assets/images/general/search.png"),
+    url("../../assets/images/general/data-science.png"),
+    url("../../assets/images/general/data-engineer.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 550px, right 900px, left 1250px;
+  background-size: 400px auto, 400px auto, 400px auto;
+  opacity: 10%;
 }
 
 .cta a {
@@ -47,11 +68,19 @@ body {
 }
 
 .stats {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2vw;
-  padding: 5vw;
+  padding: 7vw;
 }
+
+.experience {
+  margin-left: 7vw;
+  margin-right: 7vw;
+
+}
+
 @media (max-width: 500px) {
   .stats {
     display: flex;
@@ -60,22 +89,35 @@ body {
     gap: 10px;
     padding: 2vw;
   }
+
   .about {
     padding: 2vw;
   }
+
   .grid {
     grid-template-columns: 1fr;
     gap: 10px;
   }
+
   .project-card {
     padding: 3vw;
   }
-  .simple-header{
+
+  .simple-header {
     padding: 2vw;
   }
-  .cta{
+
+  .cta {
     padding: 2vw;
   }
+  .background_images {
+  width:100%;
+  height: 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 600px, center 900px, center 1200px;
+  background-size: 300px auto, 300px auto, 300px auto;
+  opacity: 10%;
+}
 }
 
 .stats div {
@@ -94,7 +136,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2vw;
   font-size: 1.3vw;
 }
@@ -108,7 +150,7 @@ body {
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .5);
 }
 
 .project-card a {
@@ -122,42 +164,45 @@ footer {
   opacity: .5;
 }
 
-.simple-header{
+.simple-header {
   padding: 3vw;
 }
 
-.cta{
+.cta {
   padding: 3vw;
 }
 
-.about li{
- padding-bottom: 10px;
- font-size: 15px;
+.about li {
+  padding-bottom: 10px;
+  font-size: 15px;
 }
 
-.project-card p{
+.project-card p {
   font-size: 1vw;
 }
 
-.project-card h2{
+.project-card h2 {
   font-size: 2vw;
 }
 
-@media(max-width: 500px){
-  .about li{
+@media(max-width: 500px) {
+  .about li {
     font-size: 15px;
   }
-  .content .about p{
-    font-size: 15px;
-  }
-  .project-card p{
-  font-size: 3vw;
-}
-.project-card a{
-  font-size: 3vw;
-}
 
-.project-card h2{
-  font-size: 5vw;
-}
+  .content .about p {
+    font-size: 15px;
+  }
+
+  .project-card p {
+    font-size: 3vw;
+  }
+
+  .project-card a {
+    font-size: 3vw;
+  }
+
+  .project-card h2 {
+    font-size: 5vw;
+  }
 }
