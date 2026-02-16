@@ -19,13 +19,18 @@ body {
 }
 
 .hero {
-  padding: 10vw 2vw;
+  
   text-align: center;
-  background: radial-gradient(circle at top, #1f2937, #020617);
+  background: linear-gradient(#2685c57a,  #0b0e14);
 }
 
 .hero h1 {
+  
   font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero .header-name{
+  padding: 7vw 2vw;
 }
 
 .hero p {
@@ -183,6 +188,28 @@ footer {
 
 .project-card h2 {
   font-size: 2vw;
+}
+
+.appbar{
+  background-color: #0b0e14;
+  padding: 2vw;
+  display: flex;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+ 
+}
+
+.appbar a{
+  color:#e5e7eb;
+   text-decoration: none;
+
+}
+
+.right-links {
+  margin-left: auto;
+  display: flex;
+  gap: 1vw;
 }
 
 @media(max-width: 500px) {
