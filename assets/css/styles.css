@@ -18,10 +18,21 @@ body {
   position: relative;
 }
 
+.contents{
+  width: 100vw;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+.content-about{
+
+  background-color: #51636740;
+  border-radius: 2vw;
+}
+
 .hero {
   
   text-align: center;
-  background: linear-gradient(#2685c57a,  #0b0e14);
+  background: linear-gradient(#2680bb3e,  #0b0e14);
 }
 
 .hero h1 {
@@ -51,7 +62,7 @@ body {
     url("../../assets/images/general/data-science.png"),
     url("../../assets/images/general/data-engineer.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: left 550px, right 900px, left 1250px;
+  background-position: left 35%, right 60%, left 95%;
   background-size: 400px auto, 400px auto, 400px auto;
   opacity: 10%;
 }
@@ -231,5 +242,33 @@ footer {
 
   .project-card h2 {
     font-size: 5vw;
+  }
+}
+
+.ribbon {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px;
+  background-color: #161a2370;
+}
+
+.track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+.track img {
+  height: 80px;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(-1%);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
