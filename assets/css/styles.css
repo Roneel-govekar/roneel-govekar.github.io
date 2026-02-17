@@ -136,6 +136,12 @@ body {
 }
 }
 
+.video-container{
+  align-items: center;
+  margin: 1000 auto;
+  padding: 30px;
+}
+
 .stats div {
   background: var(--card);
   padding: 1vw;
