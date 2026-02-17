@@ -18,29 +18,30 @@ body {
   position: relative;
 }
 
-.contents{
+.contents {
   width: 100vw;
   padding-left: 25vw;
   padding-right: 25vw;
 }
-.content-about{
+
+.content-about {
 
   background-color: #51636740;
   border-radius: 2vw;
 }
 
 .hero {
-  
+
   text-align: center;
-  background: linear-gradient(#2680bb3e,  #0b0e14);
+  background: linear-gradient(#2680bb3e, #0b0e14);
 }
 
 .hero h1 {
-  
+
   font-size: clamp(2rem, 5vw, 3rem);
 }
 
-.hero .header-name{
+.hero .header-name {
   padding: 7vw 2vw;
 }
 
@@ -54,15 +55,16 @@ body {
 
   top: 0;
   left: 0;
-  width: 1200px;
-  height: 2000px;
+  width: 100%;
+  height: 100%;
+  
   z-index: -1;
   background-image:
     url("../../assets/images/general/search.png"),
     url("../../assets/images/general/data-science.png"),
     url("../../assets/images/general/data-engineer.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: left 35%, right 60%, left 95%;
+  background-position: left 10%, right 40%, left 70%;
   background-size: 400px auto, 400px auto, 400px auto;
   opacity: 10%;
 }
@@ -84,18 +86,14 @@ body {
 }
 
 .stats {
-
+  padding: 4vw;
+  max-width: 75%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2vw;
-  padding: 7vw;
 }
 
-.experience {
-  margin-left: 7vw;
-  margin-right: 7vw;
-
-}
 
 @media (max-width: 500px) {
   .stats {
@@ -126,20 +124,20 @@ body {
   .cta {
     padding: 2vw;
   }
+
   .background_images {
-  width:100%;
-  height: 100%;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center 600px, center 900px, center 1200px;
-  background-size: 300px auto, 300px auto, 300px auto;
-  opacity: 10%;
-}
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 600px, center 900px, center 1200px;
+    background-size: 300px auto, 300px auto, 300px auto;
+    opacity: 10%;
+  }
 }
 
-.video-container{
-  align-items: center;
-  margin: 1000 auto;
-  padding: 30px;
+.video-container {
+  display: flex;
+  justify-content: center;
 }
 
 .stats div {
@@ -152,7 +150,7 @@ body {
 
 .about {
   padding: 4vw;
-  max-width: 900px;
+  max-width: 75%;
   margin: auto;
 }
 
@@ -207,19 +205,19 @@ footer {
   font-size: 2vw;
 }
 
-.appbar{
+.appbar {
   background-color: #0b0e14;
   padding: 2vw;
   display: flex;
   top: 0;
   position: sticky;
   z-index: 1000;
- 
+
 }
 
-.appbar a{
-  color:#e5e7eb;
-   text-decoration: none;
+.appbar a {
+  color: #e5e7eb;
+  text-decoration: none;
 
 }
 
@@ -251,30 +249,44 @@ footer {
   }
 }
 
-.ribbon {
+.carousel {
+  margin: 100px auto;
   width: 100%;
   overflow: hidden;
-  padding: 40px;
-  background-color: #161a2370;
-}
-
-.track {
   display: flex;
+  padding: 30px;
+  background-color: #161a2370;
+  overflow-x: auto;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.card{
+  flex: 0 0 5em;
+  padding: 1em;
+}
+
+.card img{
+  height: 200px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
-  width: max-content;
-  animation: scroll 15s linear infinite;
+  animation: spin 15s linear infinite;
+  padding-right: 2em;
 }
 
-.track img {
-  height: 80px;
-  will-change: transform;
-}
 
-@keyframes scroll {
+
+
+@keyframes spin {
   from {
-    transform: translateX(-1%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
