@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Churn Prediction</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="appbar">
+        <a href="/index.html">Home</a>
+        <div class="right-links">
+            <a href="/index.html#about">About</a>
+            <a href="/index.html#projects">Projects</a>
+            <a href="/index.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="contents">
+        <h1>AI based Clothing Application</h1>
+        <p>Built a low‑latency Flutter application for user to upload clothing images and receive AI-powered
+            recommendations.</p>
+        <div class="background_images"></div>
+        <h2>Fashion Bazar App</h2>
+        <div style="display: flex; align-items: center;  margin-bottom: 30px;">
+            <img src="../../assets/images/Donation_Bazar/Home_1.png" alt="Home Screen Screenshot"
+                style="max-width: 200px; margin-left: 24px;">
+            <div style="flex: 1; padding: 20px;">
+                <h3>Home Screen</h3>
+                <p style="text-align: justify;">This is the home screen of the Fashion Bazar app. The user will open
+                    either the left or right door. Left door leads to the wardrobe feature and right door leads to a
+                    secret future feature (WIP).</p>
+                <p style="text-align: justify;">This app also provides way to login using email for better performance
+                    for the wardrobe feature.</p>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; flex-direction: row-reverse; margin-bottom: 30px;">
+            <img src="../../assets/images/Donation_Bazar/Login_1.png" alt="Wardrobe Screenshot"
+                style="max-width: 200px; margin-right: 24px;">
+            <div style="flex: 1; padding: 20px;">
+                <h3>Wardrobe Feature</h3>
+                <p style="text-align: justify;">The user can add pictures of their clothing items to their virtual
+                    wardrobe using the '+' button.</p>
+                <p style="text-align: justify;">The app uses on-device image categorization to automatically organize
+                    and tag clothing items. It also supports online image categorization using GROK api for additional
+                    clothing item identification.</p>
+                <p style="text-align: justify;">When the refresh button is pressed, the app provides an outfit based on
+                    the wardrobe and nearest occasion from the timetable with any new clothing items added by the user.
+                </p>
+            </div>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop playsinline oncanplay="this.playbackRate=2" width="500" height="800vh"
+                src="../../assets/Donation_Bazar/working.mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="fashion-bazar-gallery">
+            <div style="display: flex; align-items: center; margin-bottom: 30px;">
+                <img src="../../assets/images/Donation_Bazar/Map_Home_1.png" alt="Calendar Screenshot"
+                    style="max-width: 200px; margin-right: 24px;">
+                <div style="flex: 1;padding: 20px; text-align: justify;">
+                    <h3>Calendar Feature</h3>
+                    <p style="text-align: justify;">The user can their weekly timetable along with the occasion and the
+                        time of the event.</p>
+                    <p style="text-align: justify;">If the user has a meeting on Friday at 3 PM, they can set an event
+                        in the calendar and the app will recommend appropriate clothing for that occasion and taking
+                        weather into account.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div style="display: flex; align-items: center; flex-direction: row-reverse; margin-bottom: 30px;">
+            <img src="../../assets/images/Donation_Bazar/Add_Donation_1.png" alt="Wardrobe Screenshot"
+                style="max-width: 200px; margin-right: 24px;">
+            <div style="flex: 1; padding: 20px;">
+                <h3>Sign-In Screen</h3>
+                <p style="text-align: justify;">The user can Signin to already created account. The authentication
+                    information is stored
+                    in Firebase.
+                </p>
+                <p style="text-align: justify;">If account is not created then you can create one using the link below.
+                    It will
+                    direct you to Signup page.
+                </p>
+                <p style="text-align: justify;">The Lgoin Icon is created using AI image generator.</p>
+            </div>
+        </div>
+
+
+        <div class="fashion-bazar-gallery">
+            <div style="display: flex; align-items: center; margin-bottom: 30px;">
+                <img src="../../assets/images/Donation_Bazar/def_Map_home_2.png" alt="Calendar Screenshot"
+                    style="max-width: 200px; margin-right: 24px;">
+                <div style="flex: 1;padding: 20px; text-align: justify;">
+                    <h3>Outfit Screen</h3>
+                    <p style="text-align: justify;">The user can see the outfit suggested by the AI application.
+                        If you don't like it you can either click on the reload button again or choose any other outfit
+                        card.
+                    </p>
+                    <p style="text-align: justify;">For now the Model only suggests a top and bottom, future iteration
+                        will include
+                        suggesting accessories and using AI generated trial. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="group">
+                <div class="card"><img src="../../assets/images/Donation_Bazar/Home_1.png"></div>
+                <div class="card"><img src="../../assets/images/Donation_Bazar/Menu_1.png"></div>
+                <div class="card"><img src="../../assets/images/Donation_Bazar/Login_1.png"></div>
+                <div class="card"><img src="../../assets/images/Donation_Bazar/Map_Home_1.png"></div>
+                <div class="card"><img src="../../assets/images/Donation_Bazar/Add_Donation_1.png"></div>
+                <div class="card"><img src="../../assets/images/Donation_Bazar/def_claim_1.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/def_Map_home_2.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/update_password.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/wardrobe.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/outfit.png"></div>
+            </div>
+            <div aria-hidden class="group">
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/home_screen.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/menu.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/signin.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/calendar.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/signup.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/delete_account.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/calendar2.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/update_password.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/wardrobe.png"></div>
+                <div class="card"><img src="../../assets/images/Fashion_Bazar/outfit.png"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
