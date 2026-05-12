@@ -13,5 +13,10 @@
     "title": "Analyzing Online Retail Store",
     "shortDescription": "Analysis of online retail store data.",
     "link": "projects/Online-Retail-Store-Analysis/index.html"
+  },
+  {
+    "title": "Donation Bazar Application",
+    "shortDescription": "Application for listing donation items.",
+    "link": "projects/Donation-Bazar-Application/index.html"
   }
 ]
